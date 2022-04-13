@@ -1,8 +1,8 @@
-#define PREFIX_ARR_SIZE         14
-#define DECLINATIONS_ARR_SIZE   16
-#define SUFFIXES_ARR_SIZE       12
+#define PREFIX_ARR_SIZE         prefixes.size()
+#define DECLINATIONS_ARR_SIZE   declinations.size()
+#define SUFFIXES_ARR_SIZE       suffixes.size()
 
-const std::string prefixes[PREFIX_ARR_SIZE] = {
+const std::vector<std::string> prefixes = {
     "blox",
     "brick",
     "rob",
@@ -19,11 +19,26 @@ const std::string prefixes[PREFIX_ARR_SIZE] = {
     "good"
 };
 
-const std::string declinations[DECLINATIONS_ARR_SIZE] = {
-    "ium", "um", "ae", "a", "us", "ur", "em", "is", "ibus", "o", "e", "i", "arum", "orum", "", "ta"
+const std::vector<std::string> declinations = {
+    "ium",
+    "um",
+    "ae",
+    "a",
+    "us",
+    "ur",
+    "em",
+    "is",
+    "ibus",
+    "o",
+    "e",
+    "i",
+    "arum",
+    "orum",
+    "",
+    "ta"
 };
 
-const std::string suffixes[SUFFIXES_ARR_SIZE] = {
+const std::vector<std::string> suffixes = {
     "city",
     "land",
     "planet",

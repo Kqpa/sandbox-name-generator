@@ -1,7 +1,7 @@
 #include "../include/libs.hpp"
 #include "../include/config.hpp"
 
-void write_contents(std::ofstream&, int);
+void write_contents(std::ofstream&, size_t);
 
 int main() {
 
@@ -24,10 +24,10 @@ int main() {
 
     int generation_time = 1;
 
-    for (int i = 0; i < PREFIX_ARR_SIZE; ++i) {
-        for (int j = 0; j < DECLINATIONS_ARR_SIZE; ++j) {
-            for (int k = 0; k < SUFFIXES_ARR_SIZE; ++k) {
-                output << "[#" << generation_time << "]: New unique  name: '" << prefixes[i] << declinations[j] << suffixes[k] << "'\n";
+    for (size_t i = 0; i < PREFIX_ARR_SIZE; ++i) {
+        for (size_t j = 0; j < DECLINATIONS_ARR_SIZE; ++j) {
+            for (size_t k = 0; k < SUFFIXES_ARR_SIZE; ++k) {
+                output << "[#" << generation_time << "]: New unique  name: '" << prefixes.at(i) << declinations.at(j) << suffixes.at(k) << "'\n";
                 generation_time++;
             }
         }
@@ -35,12 +35,12 @@ int main() {
 
     output.close();
 
-    std::cout << "[generator]: Done. Check for the '" << outFile << "' on the current working directory.\n";
+    std::cout << "[generator]: Complete. Check for the '" << outFile << "' on the current working directory.\n";
 
     return 0;
 }
 
-void write_contents(std::ofstream &output, int type) {
+void write_contents(std::ofstream &output, size_t type) {
 
     int arr = 0; /* 1 is for Prefixes, 2 is for Declinations, 3 is for Suffixes */
 
@@ -48,15 +48,15 @@ void write_contents(std::ofstream &output, int type) {
     else if (type == DECLINATIONS_ARR_SIZE) { arr = 2; }
     else if (type == SUFFIXES_ARR_SIZE) { arr = 3; }
 
-    for (int i = 0; i < type; ++i) {
+    for (size_t i = 0; i < type; ++i) {
         if ((i + 1) == type) {
-            if (arr == 1) { output << "'" << prefixes[i] << "' "; }
-            else if (arr == 2) { output << "'" << declinations[i] << "' "; }
-            else if (arr == 3) { output << "'" << suffixes[i] << "' "; }
+            if (arr == 1) { output << "'" << prefixes.at(i) << "' "; }
+            else if (arr == 2) { output << "'" << declinations.at(i) << "' "; }
+            else if (arr == 3) { output << "'" << suffixes.at(i) << "' "; }
         } else {
-            if (arr == 1) { output << "'" << prefixes[i] << "', "; }
-            else if (arr == 2) { output << "'" << declinations[i] << "', "; }
-            else if (arr == 3) { output << "'" << suffixes[i] << "', "; }
+            if (arr == 1) { output << "'" << prefixes.at(i) << "', "; }
+            else if (arr == 2) { output << "'" << declinations.at(i) << "', "; }
+            else if (arr == 3) { output << "'" << suffixes.at(i) << "', "; }
         }
     }
 }
