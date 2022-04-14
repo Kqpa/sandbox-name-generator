@@ -1,3 +1,21 @@
+/**
+ *
+ * The randomly generated sandbox names are made out of three components,
+ * a prefix, a declination (which can sometimes be disgarded), and a suffix.
+ * These can be configured by editing this file. Please do mind that you
+ * shouldn't be putting a comma to the last element of the Vector. For example:
+ *
+ * *************************************************************
+ * const std::vector<std::string> food = {
+ *    "apple",
+ *    "banana",
+ *    "orange",
+ *            ^ (remove this comma after 'orange', it's unnecessary)
+ * };
+ * **************************************************************
+ *
+ */
+
 const std::vector<std::string> prefixes = {
     "blox",
     "brick",
