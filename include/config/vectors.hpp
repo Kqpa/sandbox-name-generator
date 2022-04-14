@@ -1,7 +1,3 @@
-#define PREFIX_ARR_SIZE         prefixes.size()
-#define DECLINATIONS_ARR_SIZE   declinations.size()
-#define SUFFIXES_ARR_SIZE       suffixes.size()
-
 const std::vector<std::string> prefixes = {
     "blox",
     "brick",
@@ -50,5 +46,5 @@ const std::vector<std::string> suffixes = {
     "world",
     "hill",
     "blox",
-    "ium",
+    "ium"
 };
