@@ -2,7 +2,6 @@
 #include "../include/config/vectors.hpp"
 #include "../include/macros.hpp"
 #include "../include/config/options.hpp"
-
 #include "./better_rand.cpp"
 #include "./write_contents.cpp"
 

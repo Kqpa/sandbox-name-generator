@@ -17,8 +17,7 @@ g++ main.cpp -o generator.out && \
 ## Configuring
 * **`Prefixes`**, **`Declinations`** & **`Suffixes`** **—** ([`./include/config/vectors.hpp`](./include/config/vectors.hpp))
 
-  * The randomly generated sandbox names are made out of three components, a **prefix**, a **declination** *(which can sometimes be disgarded)*, and a **suffix**.
-  * These can be configured by editing the configuration file linked above. Please do mind that you shouldn't be putting a comma to the last element of the Vector.
+  * The randomly generated sandbox names are made out of three components, a **prefix**, a **declination** *(which can sometimes be disgarded)*, and a **suffix**. These can be configured by editing the configuration file linked above.
 
 * **Output Options** **—** ([`./include/config/options.hpp`](./include/config/options.hpp))
 
