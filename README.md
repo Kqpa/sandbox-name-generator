@@ -5,7 +5,7 @@ A configurable, sandbox name generator appropriate to the Sandbox Community's ja
 
 </div>
 
-## Building
+## Building Linux
 Copy & paste the following command block to your terminal:
 ```sh
 git clone https://github.com/Kqpa/sandbox-name-generator && \
@@ -13,6 +13,16 @@ cd ./sandbox-name-generator/src && \
 g++ main.cpp -std=c++11 -o generator.out
 ```
 And then, execute by running `./generator.out`.
+
+## Building Windows
+Building for Windows requires mingw.
+Copy & paste the following command block to your terminal:
+```sh
+git clone https://github.com/Kqpa/sandbox-name-generator
+cd .\sandbox-name-generator\src
+g++ main.cpp -o generator.exe
+```
+And then, execute by running `./generator.exe`.
 
 ## Configuring
 * **`Prefixes`**, **`Declinations`** & **`Suffixes`** **—** ([`./include/config/vectors.hpp`](./include/config/vectors.hpp))
