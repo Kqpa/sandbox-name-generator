@@ -6,7 +6,7 @@ A configurable, sandbox name generator appropriate to the Sandbox Community's ja
 </div>
 
 ## Building
-You need `g++` in order to build this project. If you're on a ***NIX** (Linux, macOS, etc..), you can install it from your package manager. If you're using Windows, you'll need to install `MinGW`. If you don't have `git`, you can download & extract the repository instead.
+You need `g++` in order to build this project. If you're using a ***NIX** (Linux, macOS, etc..) OS, you can install it from your package manager. If you're using Windows, you'll need to install `MinGW`. If you don't have `git`, you can download & extract the repository instead.
 
 ***NIX**:
 Open your terminal & run the following command block
