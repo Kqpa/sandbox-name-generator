@@ -20,6 +20,7 @@ const std::vector<std::string> prefixes = {
     "blox",
     "brick",
     "rob",
+    "stud",
     "build",
     "ava",
     "bo",
