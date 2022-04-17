@@ -5,24 +5,26 @@ A configurable, sandbox name generator appropriate to the Sandbox Community's ja
 
 </div>
 
-## Building Linux
-Copy & paste the following command block to your terminal:
+## Building
+You need `g++` in order to build this project. If you're on a ***NIX** (Linux, macOS, etc..), you can install it from your package manager. If you're using Windows, you'll need to install `MinGW`. If you don't have `git`, you can download & extract the repository instead.
+
+***NIX**:
+Open your terminal & run the following command block
 ```sh
 git clone https://github.com/Kqpa/sandbox-name-generator && \
 cd ./sandbox-name-generator/src && \
-g++ main.cpp -std=c++11 -o generator.out
+g++ main.cpp -std=c++11 -o generator.out && \
+./generator.out
 ```
-And then, execute by running `./generator.out`.
 
-## Building Windows
-Building for Windows requires mingw.
-Copy & paste the following command block to your terminal:
-```sh
-git clone https://github.com/Kqpa/sandbox-name-generator
-cd .\sandbox-name-generator\src
-g++ main.cpp -o generator.exe
+**Windows**:
+Open PowerShell & run the following command block
+```powershell
+git clone 'https://github.com/Kqpa/sandbox-name-generator' `
+; if ($?) { cd .\sandbox-name-generator\src } `
+; if ($?) { g++ main.cpp -std=c++11 -o generator.exe } `
+; if ($?) { .\generator.exe }
 ```
-And then, execute by running `./generator.exe`.
 
 ## Configuring
 * **`Prefixes`**, **`Declinations`** & **`Suffixes`** **—** ([`./include/config/vectors.hpp`](./include/config/vectors.hpp))
