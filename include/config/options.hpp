@@ -1,3 +1,6 @@
+#ifndef SANDBOXNAMEGENERATOR_OPTIONS_HPP
+#define SANDBOXNAMEGENERATOR_OPTIONS_HPP
+
 /**
  * `NAME_GENERATION_COUNT`
  *
@@ -29,3 +32,5 @@ const std::string OUTPUT_FILE = "sandbox_names.txt";
  *
  */
 const bool PLAIN_OUTPUT = false;
+
+#endif /* SANDBOXNAMEGENERATOR_OPTIONS_HPP */

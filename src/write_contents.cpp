@@ -1,3 +1,6 @@
+#ifndef SANDBOXNAMEGENERATOR_WRITECONTENTS_HPP
+#define SANDBOXNAMEGENERATOR_WRITECONTENTS_HPP
+
 /**
  * @brief Used to write the contents of the prefixes,
  * declinations and suffixes to the file with one function
@@ -23,3 +26,5 @@ void write_contents(std::ofstream &output, size_t type) {
         }
     }
 }
+
+#endif /* SANDBOXNAMEGENERATOR_WRITECONTENTS_HPP */

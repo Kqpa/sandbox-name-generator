@@ -1,3 +1,6 @@
+#ifndef SANDBOXNAMEGENERATOR_VECTORS_HPP
+#define SANDBOXNAMEGENERATOR_VECTORS_HPP
+
 /**
  *
  * The randomly generated sandbox names are made out of three components,
@@ -67,3 +70,5 @@ const std::vector<std::string> suffixes = {
     "blox",
     "ium"
 };
+
+#endif /* SANDBOXNAMEGENERATOR_VECTORS_HPP */
